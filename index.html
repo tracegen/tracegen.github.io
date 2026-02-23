@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+﻿<!DOCTYPE html>
 <html>
 
 <head>
@@ -112,9 +112,9 @@
               </span>
             </div>
 
-            <div class="is-size-4 publication-authors">
+            <div class="is-size-4 publication-authors venue-badge-row">
               <span class="author-block">
-                <strong>CVPR 2026</strong>
+                <strong class="venue-badge">CVPR 2026</strong>
               </span>
             </div>
 
@@ -138,8 +138,8 @@
                 </span>
                 <span class="link-block">
                   <a href="https://github.com/jayLEE0301/TraceGen"
-                    class="external-link button is-normal is-rounded is-dark"">
-                    <span class=" icon">
+                    class="external-link button is-normal is-rounded is-dark">
+                    <span class="icon">
                     <i class="fab fa-github"></i>
                 </span>
                 <span>Code</span>
@@ -275,7 +275,7 @@
     <div class="container is-max-desktop">
       <h3 class="title is-3 has-text-centered">Robot Manipulation Tasks</h3>
       <div class="container">
-        <div id="results-carousel" class="carousel results-carousel">
+        <div id="tasks-carousel" class="carousel results-carousel">
           <div class="item item-clothes_sample">
             <video poster="" id="clothes_sample" autoplay controls muted loop playsinline height="100%">
               <source src="./static/videos/clothes_sample.mp4" type="video/mp4">
@@ -313,10 +313,12 @@
         <video poster="" autoplay controls muted loop playsinline style="width: 100%;">
           <source src="./static/videos/pan_dataset.mp4" type="video/mp4">
         </video>
-        <p><strong>Our dataset (TraceForge-123K) consists of a diverse set of skills and embodiments.</strong><br>
       </div>
+      <p class="video-caption"><strong>Our dataset (TraceForge-123K) consists of a diverse set of skills and embodiments.</strong></p>
     </div>
-    <br>
+  </section>
+
+  <section class="section">
     <div class="container is-max-desktop">
       <h3 class="title is-3 has-text-centered">Results</h3>
 
@@ -378,7 +380,7 @@
       <h5 class="title is-5">1.2. Failure Cases of Baselines</h5>
       <div class="container">
         <p><strong>Generated video (Wan 2.2): Hallucinated embodiment.</strong></p>
-        <div id="results-carousel" class="carousel results-carousel">
+        <div id="wan-failure-carousel" class="carousel results-carousel">
           <div class="item item-wan-clothes_4">
             <video poster="" id="wan-clothes_4" autoplay controls muted loop playsinline height="100%">
               <source src="./static/videos/wan_clothes_4.mp4" type="video/mp4">
@@ -423,7 +425,7 @@
       </div>
       <div class="container">
         <p><br><strong>Generated video (Veo 3.1): Not physically grounded.</strong></p>
-        <div id="results-carousel" class="carousel results-carousel">
+        <div id="veo-failure-carousel" class="carousel results-carousel">
           <div class="item item-veo-clothes_9">
             <video poster="" id="veo-clothes_9" autoplay controls muted loop playsinline height="100%">
               <source src="./static/videos/veo_clothes_9.mp4" type="video/mp4">
@@ -634,10 +636,10 @@
         <div class="column is-8">
           <div class="content">
             <p>
-              This website template is adapted from
-              <a href="https://github.com/nerfies/nerfies.github.io">nerfies</a> under a
+              This website template is borrowed from
+              <a href="https://github.com/nerfies/nerfies.github.io">nerfies</a> under the
               <a rel="license" href="http://creativecommons.org/licenses/by-sa/4.0/">
-                Creative Commons Attribution-ShareAlike 4.0 International License</a>.
+                CC BY-SA 4.0 License</a>.
             </p>
           </div>
         </div>
@@ -648,3 +650,4 @@
 </body>
 
 </html>
+
